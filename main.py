@@ -9,8 +9,6 @@ import nltk
 
 from nltk.corpus import words
 
-nltk.download()
-
 theList = words.words()
 
 random.shuffle(theList)
