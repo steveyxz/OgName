@@ -16,13 +16,15 @@ url = 'https://api.mojang.com/users/profiles/minecraft/'
 http = urllib3.PoolManager(cert_reqs='CERT_REQUIRED', ca_certs=certifi.where())
 
 count = 0
-lowerThan = 9
+lowerThan = 6
 
 for word in theList:
 
     count += 1
 
     if len(word) > lowerThan - 1:
+        continue
+    if len(word) < 3:
         continue
 
     word = word.strip(' ').strip('\n')
