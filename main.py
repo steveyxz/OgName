@@ -5,8 +5,11 @@ import urllib3
 import certifi
 import json
 import random
+import nltk
 
 from nltk.corpus import words
+
+nltk.download()
 
 theList = words.words()
 
