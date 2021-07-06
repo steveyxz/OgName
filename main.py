@@ -1,4 +1,4 @@
-"""
+
 import time
 
 import urllib3
@@ -16,7 +16,7 @@ url = 'https://api.mojang.com/users/profiles/minecraft/'
 http = urllib3.PoolManager(cert_reqs='CERT_REQUIRED', ca_certs=certifi.where())
 
 count = 0
-lowerThan = 5
+lowerThan = 9
 
 for word in theList:
 
@@ -47,7 +47,6 @@ for word in theList:
     if count > 599:
         count = 0
         time.sleep(600)
-"""
 
-print("TESTING")
+
 
