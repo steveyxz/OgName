@@ -39,8 +39,6 @@ for word in theList:
     except Exception as e:
         r_data = ""
 
-    print(r_data)
-
     if not r_data:
         print("OG Username: " + word)
 
