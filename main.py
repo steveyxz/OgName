@@ -16,7 +16,7 @@ url = 'https://api.mojang.com/users/profiles/minecraft/'
 http = urllib3.PoolManager(cert_reqs='CERT_REQUIRED', ca_certs=certifi.where())
 
 count = 0
-lowerThan = 6
+lowerThan = 8
 
 time.sleep(600)
 
